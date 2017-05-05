@@ -3,6 +3,11 @@
 #endif
 #define _levenshtein_distance_included
 
+#if defined LEVENSHTEIN_BUFFER_SIZE
+	#define LEVENSHTEIN_BUFFER_X LEVENSHTEIN_BUFFER_SIZE
+	#define LEVENSHTEIN_BUFFER_Y LEVENSHTEIN_BUFFER_SIZE
+#endif
+
 #if !defined LEVENSHTEIN_BUFFER_X
 	#define LEVENSHTEIN_BUFFER_X 64
 #endif
