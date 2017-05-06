@@ -21,12 +21,12 @@
 #endif
 
 
-stock __fast_min(const a, const b)
+static stock __fast_min(const a, const b)
 {
 	return a < b ? a : b;
 }
 
-stock levenshtein_distance(const str1[], const str1_size, str2[], const str2_size) 
+stock levenshtein_distance(const str1[], const str1_size, const str2[], const str2_size) 
 {
 	if(str1_size == 0)
 		return str1_size;
